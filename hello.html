@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input field</title>
+    </head>
+    <body style="height: 100vh; display: flex; align-items: center; justify-content: center">
+        <input type="range" min="5" max="10" step="1" oninput="console.log(event.target.value)"/>
+    </body>
+
+    <script>
+        function setInputValue(value) {
+            document.querySelector("input").value = value;
+        }
+    </script>
+</html>
