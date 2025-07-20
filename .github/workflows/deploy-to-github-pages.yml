@@ -1,0 +1,47 @@
+name: Deploy to `Github Pages`
+on: [push]
+
+jobs:
+    build-and-upload-artifacts:
+        name: Build and upload artifacts
+        runs-on: self-hosted
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Install `node` and `npm`
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 24
+
+            - name: Install dependencies
+              run: npm clean-install
+
+            - name: Build
+              run: npm run build
+
+            - name: Upload artifacts
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: dist/
+
+    deploy-to-github-pages:
+        name: Deploy to `Github Pages`
+        needs: build-and-upload-artifacts
+        runs-on: self-hosted
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        permissions:
+            pages: write
+            id-token: write
+
+        steps:
+            - name: Deploy to `Github Pages`
+              uses: actions/deploy-pages@v4
+              id: deployment
+
+            - name: Echo deployment URL
+              run: "echo deployment URL: ${{ steps.deployment.outputs.page_url }}"
