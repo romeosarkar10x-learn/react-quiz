@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": false,
+
+    "[yaml]": {
+        "editor.tabSize": 4,
+        "editor.indentSize": "tabSize",
+        "editor.detectIndentation": false
+    }
+}
