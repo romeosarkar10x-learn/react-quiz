@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
 // https://vite.dev/config/
-console.log("hello from vite config");
-console.log(process.env.GITHUB_REPOSITORY);
+const REPO_NAME = process.env.GITHUB_REPOSITORY.split("/").at(-1);
+console.log("REPO_NAME:", REPO_NAME);
 
 export default defineConfig({
     plugins: [react()],
