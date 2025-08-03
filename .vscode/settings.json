@@ -4,6 +4,8 @@
     "editor.indentSize": "tabSize",
     "editor.detectIndentation": false,
 
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
     "[yaml]": {
         "editor.tabSize": 4,
         "editor.indentSize": "tabSize",
