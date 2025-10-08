@@ -1,394 +1,349 @@
 {
     "questions": [
         {
-            "question": "Which is the most popular JavaScript framework?",
+            "text": "Which is the most popular JavaScript framework?",
             "options": [
                 {
                     "text": "Angular",
-                    "isCorrect": false,
                     "reason": "Angular is a popular framework but is generally considered less widely adopted than React for new projects."
                 },
                 {
                     "text": "React",
-                    "isCorrect": true,
                     "reason": "React is currently one of the most widely used and in-demand JavaScript libraries for building user interfaces."
                 },
                 {
                     "text": "Svelte",
-                    "isCorrect": false,
                     "reason": "Svelte is gaining popularity but is not yet as dominant as React or Angular."
                 },
                 {
                     "text": "Vue",
-                    "isCorrect": false,
                     "reason": "Vue.js is a very popular framework, especially in China, but React tends to have a larger global community."
                 }
             ],
-            "hint": "Think about the major tech companies and which one is most associated with modern front-end development."
+            "hint": "Think about the major tech companies and which one is most associated with modern front-end development.",
+            "ansIndex": 1
         },
         {
-            "question": "Which company invented React?",
+            "text": "Which company invented React?",
             "options": [
                 {
                     "text": "Google",
-                    "isCorrect": false,
                     "reason": "Google developed Angular."
                 },
                 {
                     "text": "Apple",
-                    "isCorrect": false,
                     "reason": "Apple is known for Swift and iOS development, not React."
                 },
                 {
                     "text": "Netflix",
-                    "isCorrect": false,
                     "reason": "Netflix uses React, but they didn't invent it."
                 },
                 {
                     "text": "Facebook",
-                    "isCorrect": true,
                     "reason": "React was developed by Facebook (now Meta) engineers."
                 }
             ],
-            "hint": "The social media giant known for the 'like' button."
+            "hint": "The social media giant known for the 'like' button.",
+            "ansIndex": 3
         },
         {
-            "question": "What's the fundamental building block of React apps?",
+            "text": "What's the fundamental building block of React apps?",
             "options": [
                 {
                     "text": "Components",
-                    "isCorrect": true,
                     "reason": "React applications are built from small, isolated, and reusable pieces of UI called components."
                 },
                 {
                     "text": "Blocks",
-                    "isCorrect": false,
                     "reason": "While 'blocks' might be a general term, 'components' is the specific React terminology."
                 },
                 {
                     "text": "Elements",
-                    "isCorrect": false,
                     "reason": "React elements are the smallest building blocks, but components are what you compose to build applications."
                 },
                 {
                     "text": "Effects",
-                    "isCorrect": false,
                     "reason": "Effects are used for side effects, not the fundamental building blocks of the UI itself."
                 }
             ],
-            "hint": "These are reusable, self-contained pieces of UI, often written as functions or classes."
+            "hint": "These are reusable, self-contained pieces of UI, often written as functions or classes.",
+            "ansIndex": 0
         },
         {
-            "question": "What's the name of the syntax we use to describe the UI in React components?",
+            "text": "What's the name of the syntax we use to describe the UI in React components?",
             "options": [
                 {
                     "text": "FBJ",
-                    "isCorrect": false,
                     "reason": "This is not a recognized React syntax."
                 },
                 {
                     "text": "Babel",
-                    "isCorrect": false,
                     "reason": "Babel is a JavaScript compiler that helps convert JSX into regular JavaScript, but it's not the syntax itself."
                 },
                 {
                     "text": "JSX",
-                    "isCorrect": true,
                     "reason": "JSX (JavaScript XML) is a syntax extension for JavaScript, used with React to describe what the UI should look like."
                 },
                 {
                     "text": "ES2015",
-                    "isCorrect": false,
                     "reason": "ES2015 (ECMAScript 2015 or ES6) refers to a version of JavaScript, not the React UI syntax."
                 }
             ],
-            "hint": "It looks like a mix of JavaScript and HTML."
+            "hint": "It looks like a mix of JavaScript and HTML.",
+            "ansIndex": 2
         },
         {
-            "question": "How does data flow naturally in React apps?",
+            "text": "How does data flow naturally in React apps?",
             "options": [
                 {
                     "text": "From parents to children",
-                    "isCorrect": true,
                     "reason": "Data in React typically flows unidirectionally, from parent components down to child components via props."
                 },
                 {
                     "text": "From children to parents",
-                    "isCorrect": false,
                     "reason": "Direct data flow from children to parents is generally discouraged in React; callbacks are used instead."
                 },
                 {
                     "text": "Both ways",
-                    "isCorrect": false,
                     "reason": "While data can be passed 'up' using callbacks, the natural flow is unidirectional."
                 },
                 {
                     "text": "The developers decides",
-                    "isCorrect": false,
                     "reason": "While developers have control, React's philosophy encourages a specific data flow pattern."
                 }
             ],
-            "hint": "Think of a family tree and who gives what to whom."
+            "hint": "Think of a family tree and who gives what to whom.",
+            "ansIndex": 0
         },
         {
-            "question": "How to pass data into a child component?",
+            "text": "How to pass data into a child component?",
             "options": [
                 {
                     "text": "State",
-                    "isCorrect": false,
                     "reason": "State is managed within a component; it's not the primary mechanism for passing data to children."
                 },
                 {
                     "text": "Props",
-                    "isCorrect": true,
                     "reason": "Props (short for properties) are the standard way to pass data from a parent component to a child component in React."
                 },
                 {
                     "text": "PropTypes",
-                    "isCorrect": false,
                     "reason": "PropTypes are used for type-checking props, not for passing data itself."
                 },
                 {
                     "text": "Parameters",
-                    "isCorrect": false,
                     "reason": "While functions take parameters, 'props' is the specific React term for data passed to components."
                 }
             ],
-            "hint": "The name is a shortened version of 'properties'."
+            "hint": "The name is a shortened version of 'properties'.",
+            "ansIndex": 1
         },
         {
-            "question": "When to use derived state?",
+            "text": "When to use derived state?",
             "options": [
                 {
                     "text": "Whenever the state should not trigger a re-render",
-                    "isCorrect": false,
                     "reason": "Derived state still participates in the rendering process if its dependencies change."
                 },
                 {
                     "text": "Whenever the state can be synchronized with an effect",
-                    "isCorrect": false,
                     "reason": "Derived state is computed directly from existing state or props, not synchronized with an effect."
                 },
                 {
                     "text": "Whenever the state should be accessible to all components",
-                    "isCorrect": false,
                     "reason": "This sounds more like context or global state management, not derived state."
                 },
                 {
                     "text": "Whenever the state can be computed from another state variable or props",
-                    "isCorrect": true,
                     "reason": "Derived state is when a piece of state can be fully calculated from existing props or other state variables, avoiding redundancy."
                 }
             ],
-            "hint": "This is a concept of computing a state value on the fly, rather than storing it explicitly."
+            "hint": "This is a concept of computing a state value on the fly, rather than storing it explicitly.",
+            "ansIndex": 3
         },
         {
-            "question": "What triggers a UI re-render in React?",
+            "text": "What triggers a UI re-render in React?",
             "options": [
                 {
                     "text": "Running an effect",
-                    "isCorrect": false,
                     "reason": "Effects themselves don't directly trigger re-renders, but they might cause state updates which then trigger re-renders."
                 },
                 {
                     "text": "Passing props",
-                    "isCorrect": false,
                     "reason": "Passing props doesn't trigger a re-render on its own. It's when those props *change* that a re-render can occur."
                 },
                 {
                     "text": "Updating state",
-                    "isCorrect": true,
                     "reason": "The primary way to trigger a re-render in React is by updating a component's state or props."
                 },
                 {
                     "text": "Adding event listeners to DOM elements",
-                    "isCorrect": false,
                     "reason": "Adding event listeners is a side effect and doesn't directly cause React's re-rendering mechanism to fire."
                 }
             ],
-            "hint": "This is the primary way a component knows its data has changed and it needs to update the UI."
+            "hint": "This is the primary way a component knows its data has changed and it needs to update the UI.",
+            "ansIndex": 2
         },
         {
-            "question": "When do we directly \"touch\" the DOM in React?",
+            "text": "When do we directly \"touch\" the DOM in React?",
             "options": [
                 {
                     "text": "When we need to listen to an event",
-                    "isCorrect": false,
                     "reason": "React provides synthetic events that abstract away direct DOM interaction for event handling."
                 },
                 {
                     "text": "When we need to change the UI",
-                    "isCorrect": false,
-                    "reason": "React's declarative nature means you describe the desired UI, and React handles DOM manipulation."
+                    "reason": "React's declarative nature meansIndex you describe the desired UI, and React handles DOM manipulation."
                 },
                 {
                     "text": "When we need to add styles",
-                    "isCorrect": false,
                     "reason": "Styles are typically applied via CSS classes or inline styles within React components, not direct DOM manipulation."
                 },
                 {
                     "text": "Almost never",
-                    "isCorrect": true,
                     "reason": "React abstracts away direct DOM manipulation. We typically only interact with the DOM directly for very specific use cases like managing focus, text selection, or integrating with third-party DOM libraries, usually with `useRef`."
                 }
             ],
-            "hint": "React's core philosophy is to manage the UI for you, so direct interaction is usually unnecessary."
+            "hint": "React's core philosophy is to manage the UI for you, so direct interaction is usually unnecessary.",
+            "ansIndex": 3
         },
         {
-            "question": "In what situation do we use a callback to update state?",
+            "text": "In what situation do we use a callback to update state?",
             "options": [
                 {
                     "text": "When updating the state will be slow",
-                    "isCorrect": false,
                     "reason": "Callbacks for state updates are about correct state management, not performance optimization directly."
                 },
                 {
                     "text": "When the updated state is very data-intensive",
-                    "isCorrect": false,
                     "reason": "The data intensity doesn't dictate using a callback for state updates."
                 },
                 {
                     "text": "When the state update should happen faster",
-                    "isCorrect": false,
                     "reason": "Callbacks don't inherently make state updates faster."
                 },
                 {
                     "text": "When the new state depends on the previous state",
-                    "isCorrect": true,
                     "reason": "When the new state value is computed based on the previous state, passing a callback function to `setState` ensures you're working with the most up-to-date state."
                 }
             ],
-            "hint": "This is a crucial pattern to avoid race conditions when state updates depend on the previous value."
+            "hint": "This is a crucial pattern to avoid race conditions when state updates depend on the previous value.",
+            "ansIndex": 3
         },
         {
-            "question": "If we pass a function to useState, when will that function be called?",
+            "text": "If we pass a function to useState, when will that function be called?",
             "options": [
                 {
                     "text": "On each re-render",
-                    "isCorrect": false,
                     "reason": "If a function is passed as the *initial* state to `useState`, it's only called once."
                 },
                 {
                     "text": "Each time we update the state",
-                    "isCorrect": false,
                     "reason": "This describes the behavior when passing a function to the `setState` updater, not the initial `useState` call."
                 },
                 {
                     "text": "Only on the initial render",
-                    "isCorrect": true,
                     "reason": "When you pass a function to `useState` as the initial state, React will execute that function only once during the component's initial render to get the initial state value. This is useful for expensive initial state calculations."
                 },
                 {
                     "text": "The first time we update the state",
-                    "isCorrect": false,
                     "reason": "The function passed to `useState` for initial state is called on the *initial render*, not when the state is first updated."
                 }
             ],
-            "hint": "Think about the purpose of passing a function here—it's for lazy initialization."
+            "hint": "Think about the purpose of passing a function here—it's for lazy initialization.",
+            "ansIndex": 2
         },
         {
-            "question": "Which hook to use for an API request on the component's initial render?",
+            "text": "Which hook to use for an API request on the component's initial render?",
             "options": [
                 {
                     "text": "useState",
-                    "isCorrect": false,
                     "reason": "`useState` is for managing component state, not for side effects like API calls."
                 },
                 {
                     "text": "useEffect",
-                    "isCorrect": true,
                     "reason": "`useEffect` is the standard React hook for performing side effects, such as data fetching, after the component renders. With an empty dependency array `[]`, it runs only once on the initial render."
                 },
                 {
                     "text": "useRef",
-                    "isCorrect": false,
                     "reason": "`useRef` is for accessing DOM elements or persisting mutable values across renders, not for API requests."
                 },
                 {
                     "text": "useReducer",
-                    "isCorrect": false,
                     "reason": "`useReducer` is an alternative to `useState` for managing more complex state logic, but it doesn't directly handle side effects like API calls."
                 }
             ],
-            "hint": "This hook is designed for handling 'side effects' such as data fetching or subscriptions."
+            "hint": "This hook is designed for handling 'side effects' such as data fetching or subscriptions.",
+            "ansIndex": 1
         },
         {
-            "question": "Which variables should go into the useEffect dependency array?",
+            "text": "Which variables should go into the useEffect dependency array?",
             "options": [
                 {
                     "text": "Usually none",
-                    "isCorrect": false,
-                    "reason": "An empty dependency array means the effect runs once, but often effects depend on specific values."
+                    "reason": "An empty dependency array meansIndex the effect runs once, but often effects depend on specific values."
                 },
                 {
                     "text": "All our state variables",
-                    "isCorrect": false,
                     "reason": "Only state and props *used within the effect* should be included, not all of them."
                 },
                 {
                     "text": "All state and props referenced in the effect",
-                    "isCorrect": true,
                     "reason": "To prevent stale closures and ensure the effect re-runs when necessary, all values (state, props, or functions defined outside the effect) that are used inside the effect and change over time should be included in the dependency array."
                 },
                 {
                     "text": "All variables needed for clean up",
-                    "isCorrect": false,
                     "reason": "Variables needed for cleanup are often already part of the effect's scope and don't necessarily need to be in the dependency array unless they are also dependencies of the effect itself."
                 }
             ],
-            "hint": "Think about what the effect 'depends' on to re-run with the most current values."
+            "hint": "Think about what the effect 'depends' on to re-run with the most current values.",
+            "ansIndex": 2
         },
         {
-            "question": "An effect will always run on the initial render.",
+            "text": "An effect will always run on the initial render.",
             "options": [
                 {
                     "text": "True",
-                    "isCorrect": true,
                     "reason": "Regardless of the dependency array, a `useEffect` hook always runs at least once after the initial render of the component."
                 },
                 {
                     "text": "It depends on the dependency array",
-                    "isCorrect": false,
                     "reason": "While the dependency array determines subsequent runs, the initial run is a fundamental behavior of `useEffect`."
                 },
                 {
                     "text": "False",
-                    "isCorrect": false,
                     "reason": "This statement is true; effects always run on the initial render."
                 },
                 {
                     "text": "In depends on the code in the effect",
-                    "isCorrect": false,
                     "reason": "The code inside the effect doesn't change the fact that it will execute after the initial render."
                 }
             ],
-            "hint": "This is a core, non-negotiable behavior of the `useEffect` hook."
+            "hint": "This is a core, non-negotiable behavior of the `useEffect` hook.",
+            "ansIndex": 0
         },
         {
-            "question": "When will an effect run if it doesn't have a dependency array?",
+            "text": "When will an effect run if it doesn't have a dependency array?",
             "options": [
                 {
                     "text": "Only when the component mounts",
-                    "isCorrect": false,
                     "reason": "This is the behavior when the dependency array is empty (`[]`)."
                 },
                 {
                     "text": "Only when the component unmounts",
-                    "isCorrect": false,
                     "reason": "Cleanup functions run when the component unmounts or before the effect re-runs, but not the effect itself without a dependency array."
                 },
                 {
                     "text": "The first time the component re-renders",
-                    "isCorrect": false,
                     "reason": "It runs on the initial render and subsequent re-renders."
                 },
                 {
                     "text": "Each time the component is re-rendered",
-                    "isCorrect": true,
                     "reason": "If `useEffect` is called without a dependency array, it will run after every single render of the component, including the initial render and all subsequent updates."
                 }
             ],
-            "hint": "Without a dependency array to tell it when to stop, it will run every time something changes."
+            "hint": "Without a dependency array to tell it when to stop, it will run every time something changes.",
+            "ansIndex": 3
         }
     ]
 }
