@@ -1,0 +1,16 @@
+nav.component_question-nav {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > .previous {
+        justify-self: start;
+        grid-column: 1;
+    }
+
+    > .finish,
+    .next {
+        justify-self: end;
+        grid-column: 2;
+    }
+}

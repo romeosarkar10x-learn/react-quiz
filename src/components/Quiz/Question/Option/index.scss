@@ -1,0 +1,54 @@
+button.component_option {
+    text-align: left;
+    display: block;
+    padding: 1.25rem;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius);
+    // border: solid var(--color-dark) 4px;
+    border: solid transparent 3px;
+    font-size: inherit;
+    font-family: inherit;
+    min-width: 100%;
+    // width: 350px;
+    --color: var(--color-medium);
+    color: var(--color);
+
+    &.selected {
+        border: 3px solid white;
+        background-color: transparent;
+        transition: 0.3s;
+    }
+
+    &.pointer {
+        cursor: pointer;
+    }
+
+    &.correct {
+        --color: var(--color-medium);
+        // border: 2px solid var(--color-theme);
+        background-color: var(--color-theme);
+    }
+
+    &.incorrect {
+        --color: var(--color-darkest);
+        background-color: var(--color-accent);
+        // border: 2px solid var(--color-accent);
+    }
+
+    /*
+    &:disabled:hover {
+        // background-color: var(--color-darkest);
+        cursor: default;
+        // user-select: none;
+    }
+        */
+
+    > p.reason {
+        margin-top: 0.75rem;
+        border-top: 2px solid var(--color);
+        padding-top: 0.75rem;
+        font-size: 1.5rem;
+    }
+}
