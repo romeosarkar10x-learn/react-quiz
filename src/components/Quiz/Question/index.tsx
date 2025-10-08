@@ -18,7 +18,6 @@ export default function Question({
     question,
     quizState,
     userAnsIndex,
-    state,
     index,
     totalNumQuestions,
     dispatch,
@@ -31,24 +30,6 @@ export default function Question({
     totalNumQuestions: number;
     dispatch: ActionDispatch<[IQuizEvents]>;
 }) {
-    function getOptionState(
-        optionIndex: number,
-        questionState: ValueOf<typeof QuestionState>,
-        ansIndex: number,
-        userAnsIndex: number | undefined,
-    ) {
-        // console.log(ansIndex, index);
-        if (questionState === QuestionState.ANSWER_REVEALED) {
-            return ansIndex === optionIndex ? OptionState.CORRECT : OptionState.INCORRECT;
-        }
-
-        if (questionState === QuestionState.ANSWERED && userAnsIndex === optionIndex) {
-            return OptionState.SELECTED;
-        }
-
-        return OptionState.NONE;
-    }
-
     return (
         <div className="component_question">
             <div className="question">
@@ -65,7 +46,6 @@ export default function Question({
                     quizState={quizState}
                     isSelected={userAnsIndex === index}
                     isCorrect={question.ansIndex === index}
-                    // state={getOptionState(index, state, question.ansIndex, userAnsIndex)}
                 />
             ))}
             <QuestionNav
