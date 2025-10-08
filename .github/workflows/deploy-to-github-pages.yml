@@ -28,7 +28,7 @@ jobs:
     deploy-to-github-pages:
         name: Deploy to `Github Pages`
         needs: build-and-upload-artifacts
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
 
         environment:
             name: github-pages
