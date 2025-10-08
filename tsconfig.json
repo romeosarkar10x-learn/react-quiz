@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "types": ["vite/client"],
+        "module": "nodenext",
+        "target": "es6",
+        "lib": ["ES6", "DOM"],
+
+        "removeComments": true,
+
+        /* Bundler */
+        "jsx": "react-jsx",
+        "noEmit": true,
+        "moduleDetection": "force",
+        "moduleResolution": "nodenext",
+
+        /* Linting */
+
+        "allowUnreachableCode": false,
+
+        "allowUnusedLabels": false,
+        "alwaysStrict": true,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+
+        "noUnusedParameters": true,
+
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictBuiltinIteratorReturn": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "useUnknownInCatchVariables": true,
+        "allowArbitraryExtensions": true,
+        "allowImportingTsExtensions": true,
+        "allowUmdGlobalAccess": true,
+        "baseUrl": "./",
+
+        "erasableSyntaxOnly": true
+    },
+    "include": ["./src/index.tsx"]
+}
